@@ -16,6 +16,6 @@ namespace School_Project_WebApplication.Areas.Identity.Data
 
         [PersonalData]
         [Column(TypeName = "nvarchar(100)")]
-        public string LastNAme { get; set; }
+        public string LastName { get; set; }
     }
 }

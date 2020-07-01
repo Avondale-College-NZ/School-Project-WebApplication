@@ -47,11 +47,9 @@ namespace School_Project_WebApplication.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [EmailAddress]
             [Display(Name = "First Name")]
             public string FirstName { get; set; }
             [Required]
-            [EmailAddress]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
 

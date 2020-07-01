@@ -20,7 +20,11 @@ namespace School_Project_WebApplication.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("SchoolProjectDbContextConnection")));
 
-                services.AddDefaultIdentity<UserApplication>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<UserApplication>(options => {
+                    options.SignIn.RequireConfirmedAccount = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequireLowercase = false;
+                    })
                     .AddEntityFrameworkStores<SchoolProjectDbContext>();
             });
         }

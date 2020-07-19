@@ -15,7 +15,7 @@ namespace School_Project_WebApplication.Data
             : base(options)
         {
         }
-
+        
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

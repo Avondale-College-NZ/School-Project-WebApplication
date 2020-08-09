@@ -9,11 +9,19 @@ namespace School_Project_WebApplication.Controllers
 {
     public class AdmininstrationController : Controller
     {
-        public class AdministrationContoller (RoleManager<IdentityRole> roleManager)
-            {
+        private readonly RoleManager<IdentityRole> roleManager;
 
 
-            }
+        public AdmininstrationController(RoleManager<IdentityRole> roleManager)
+        {
+            this.roleManager = roleManager;
+        }
+      
+        [HttpGet]
+        public IActionResult CreateRole()
+        {
+            return View();
+        }
+    }
+
 }
-
-            

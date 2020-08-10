@@ -9,6 +9,6 @@ namespace School_Project_WebApplication.Models
     public class CreateRoleViewModel
     {
         [Required] 
-        public int MyProperty { get; set; }
+        public string RoleName { get; set; }
     }
 }

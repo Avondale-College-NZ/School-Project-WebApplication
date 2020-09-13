@@ -34,6 +34,10 @@ namespace School_Project_WebApplication.Controllers
         {
             return View();
         }
+        public IActionResult Database()
+        {
+            return View();
+        }
 
 
 

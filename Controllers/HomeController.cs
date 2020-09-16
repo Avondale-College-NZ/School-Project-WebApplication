@@ -34,7 +34,7 @@ namespace School_Project_WebApplication.Controllers
         {
             return View();
         }
-        public IActionResult Database()
+        public IActionResult db()
         {
             return View();
         }

@@ -23,6 +23,7 @@ namespace School_Project_WebApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDefaultIdentity<ApplicationUser>().AddRoles<Microsoft.AspNetCore.Identity.IdentityRole>().AddEntityFrameworkStores<Datacontext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -30,7 +31,7 @@ namespace School_Project_WebApplication
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.IsDevelopment()) 
             {
                 app.UseDeveloperExceptionPage();
             }

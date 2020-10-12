@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Science";
 }
-
+<!--The text below will be displayed when the users clicks on the science page-->
 <header>
     <h1>@ViewData["Title"]</h1>
     <p>Welcome to the Science Department.</p>
@@ -15,6 +15,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--Adding a green hoverable dropbox-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * {
@@ -55,7 +56,7 @@
     </style>
 </head>
 <body>
-
+    <!--When the user types a letter, the system will automatically filter the first letter and only display names with the same first letter -->
     <h2>Science Department Teachers</h2>
 
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">

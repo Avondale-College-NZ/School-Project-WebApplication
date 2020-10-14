@@ -28,7 +28,7 @@ namespace School_Project_WebApplication.Areas.Identity.Pages.Account
 
         [BindProperty]
         public InputModel Input { get; set; }
-
+        //Email Address will be required for email comfirmation 
         public class InputModel
         {
             [Required]

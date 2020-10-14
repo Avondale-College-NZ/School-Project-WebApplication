@@ -43,6 +43,8 @@ namespace School_Project_WebApplication.Areas.Identity.Pages.Account
 
         public class InputModel
         {
+            //Email & Password will be required to login into the website
+            //There will be a 'remember me' section for the user to automically sign in if they want don't want to login again next time
             [Required]
             [EmailAddress]
             public string Email { get; set; }

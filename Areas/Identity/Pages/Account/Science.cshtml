@@ -15,13 +15,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--Adding a green hoverable dropbox-->
+    <!--Added a green hoverable dropbox-->
+    <!--The dropbox will contain pages-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * {
             box-sizing: border-box;
         }
-
+        
         #myInput {
             background-image: url('/css/searchicon.png');
             background-position: 10px 12px;
@@ -32,7 +33,7 @@
             border: 1px solid #ddd;
             margin-bottom: 12px;
         }
-
+        
         #myUL {
             list-style-type: none;
             padding: 0;
@@ -60,7 +61,7 @@
     <h2>Science Department Teachers</h2>
 
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
+    <!--These are the names that will be displayed when the user types in a letter-->
     <ul id="myUL">
         <li><a href="#">Adele</a></li>
         <li><a href="#">Agnes</a></li>
@@ -72,7 +73,7 @@
         <li><a href="#">Christina</a></li>
         <li><a href="#">Cindy</a></li>
     </ul>
-
+    <!--The function will be process when the user enters in a letter in the search bar-->
     <script>
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;

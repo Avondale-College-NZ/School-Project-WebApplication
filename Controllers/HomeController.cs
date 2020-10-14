@@ -19,7 +19,7 @@ namespace School_Project_WebApplication.Controllers
         {
             _logger = logger;
         }
-
+        //These Controllers allows the pages to be opened up by the user
         public IActionResult Index()
         {
             return View();
